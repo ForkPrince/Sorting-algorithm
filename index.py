@@ -25,7 +25,7 @@ def launch_selected_file(index_files, choice):
         print("Invalid input. Please enter a number.")
 
 if __name__ == "__main__":
-    root_directory = "."  # You can change this to the root directory where you want to search for index.py files
+    root_directory = "."
     index_files = list_index_files(root_directory)
 
     if not index_files:

@@ -100,6 +100,8 @@ def extract_sorted_data(universe):
     return sorted_data
 
 if __name__ == "__main__":
-    unsorted_data = [1, 3, 2, 5, 4, 6, 9]
+    size = input("Array size? ")
+    unsorted_data = list(range(int(size)))
+    random.shuffle(unsorted_data)
     best_sorted_data, best_universe = cosmic_sort(unsorted_data)
     console.print("\n[bold green]Best sorted data:[/bold green]\n", best_sorted_data)

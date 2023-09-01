@@ -84,7 +84,8 @@ def sort(arr):
             return perm
         print(f"Iteration {idx}/{iterations}: {perm}")
 
-unsorted_array = list(range(10))
+size = input("Array size? ")
+unsorted_array = list(range(int(size)))
 shuffle(unsorted_array)
 
 start_time = time.time()

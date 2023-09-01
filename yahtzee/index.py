@@ -47,8 +47,9 @@ def modifiedBogoSort(arr, chunk_size):
 
     return arr, iterations, elapsedTime
 
-def main():
-    unsorted_array = list(range(10, 0, -1))
+def main(s):
+    unsorted_array = list(range(s))
+    random.shuffle(unsorted_array)
 
     length = len(unsorted_array)
     chunk_size = length // 5
@@ -66,4 +67,5 @@ def main():
     print(f"Time elapsed: {elapsed_time:.6f} seconds")
 
 if __name__ == "__main__":
-    main()
+    size = input("Array size? ")
+    main(int(size))
