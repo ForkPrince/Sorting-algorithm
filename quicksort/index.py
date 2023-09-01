@@ -11,6 +11,7 @@ def quicksort(arr):
             arr1.append(i)
         else:
             arr2.append(i)
+    print("Part: ", arr, "\nParts: ", arr1, pivot, arr2, "\n")
     arr1 = quicksort(arr1)
     arr2 = quicksort(arr2)
 
