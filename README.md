@@ -10,7 +10,7 @@ Here's a list of the sorting algorithms you'll find in this repository:
 
 2. **Cosmic Sorter:** Explore the cosmos of sorting with this algorithm that takes you on a journey through the universe of sorting possibilities.
 
-3. **EverySort:** As the name suggests, it's an attempt to sort using every possible sorting technique—interesting, but not practical.
+3. **EverySort:** As the name suggests, it's an attempt to sort by verifying every possible permutation, it is very slow.
 
 4. **FullCosmicSort:** An extended version of Cosmic Sorter that dives even deeper into the cosmic abyss of sorting challenges.
 
