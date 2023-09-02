@@ -1,2 +1,2 @@
 # Sorting algorithms
-A collection of really bad sorting algorithm
+A collection of really bad sorting algorithms (and quicksort)
