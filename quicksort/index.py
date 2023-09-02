@@ -4,30 +4,27 @@ import time
 def quicksort(arr):
     if len(arr) <= 1:
         return arr
-    arr1, arr2 = [], []
-    pivot = arr[0]
-    for i in arr[1:len(arr)]:
-        if i < pivot:
-            arr1.append(i)
-        else:
-            arr2.append(i)
-    print("Part: ", arr, "\nParts: ", arr1, pivot, arr2, "\n")
-    arr1 = quicksort(arr1)
-    arr2 = quicksort(arr2)
-
-    arr = arr1 + [pivot] + arr2
+    pivot_index = 0
+    for i in range(1, len(arr)):
+        if arr[i] < arr[pivot_index]:
+            arr.insert(pivot_index, arr[i])
+            arr.pop(i + 1)
+            pivot_index += 1
+    
+    arr[0:pivot_index] = quicksort(arr[0:pivot_index])
+    arr[pivot_index + 1:len(arr)] = quicksort(arr[pivot_index + 1:len(arr)])
     return arr
     
 
 def main(s):
     unsorted_array = list(range(s))
     shuffle(unsorted_array)
+    print("unsorted array: ", unsorted_array)
     start_time = time.time()
     sorted_array = quicksort(unsorted_array)
     end_time = time.time()
 
     elapsed_time = end_time - start_time
-    print("unsorted array: ", unsorted_array)
     print("sorted array ", sorted_array)
     print("elsapsed time: ", elapsed_time)
 
