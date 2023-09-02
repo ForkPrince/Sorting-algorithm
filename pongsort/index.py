@@ -17,7 +17,7 @@ FPS = 60
 
 # Create the screen
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-pygame.display.set_caption("The Pong Sorting Algorithm Optimization and Efficiency Enhancement Procedure for High-Performance Data Sorting in Complex Computing Environments")
+pygame.display.set_caption("The Pong Sorting Algorithm: Optimization and Efficiency Enhancement Procedure for High-Performance Data Sorting in Complex Computing Environments")
 
 # Create paddles
 player_paddle = pygame.Rect(50, SCREEN_HEIGHT // 2 - PADDLE_HEIGHT // 2, PADDLE_WIDTH, PADDLE_HEIGHT)
