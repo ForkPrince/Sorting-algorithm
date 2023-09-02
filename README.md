@@ -22,6 +22,8 @@ Here's a list of the sorting algorithms you'll find in this repository:
 
 8. **Yahtzee Sort:** A playful take on sorting that draws inspiration from the famous dice game, Yahtzee.
 
+9. **The Pong Sorting Algorithm:** A unique sorting algorithm that turns the sorting process into a game of Pong against an AI opponent. When the user scores, it performs a single permutation on the array, and when the AI scores, it adds a permutation back to the list. 
+
 ## Why Explore These Algorithms?
 
 While some of these algorithms may never be used in practical applications, they offer valuable insights into the world of sorting. You can learn about algorithmic thinking, efficiency trade-offs, and the sheer creativity that can emerge in the world of computer science.
