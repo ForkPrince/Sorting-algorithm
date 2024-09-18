@@ -18,7 +18,7 @@ def launch_selected_file(index_files, choice):
         choice = int(choice)
         if 1 <= choice <= len(index_files):
             file_to_launch = index_files[choice - 1]
-            os.system(f"python {file_to_launch}")
+            os.system(f"python3 {file_to_launch}")
         else:
             print("Invalid choice. Please select a valid option.")
     except ValueError:
